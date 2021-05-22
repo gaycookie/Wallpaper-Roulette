@@ -60,9 +60,9 @@ As of this moment the ratings are as follows:
 - `"questionableless"` - Safe & Questionable
 - `"questionableplus"` - Questionable & Explicit
 
-### keepOld
-By default this script removed all the downloaded wallpapers when a new one is set.  
-If you would like this script to preserve the downloads, set this to `true`.
+### removeOld
+By default this script removes all the downloaded wallpapers when a new one is set.  
+If you would like this script to preserve the downloads, set this to `false`.
 
 [Konachan]: https://konachan.net/
 [tags]: https://konachan.net/tag?name=&type=&order=count
