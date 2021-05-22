@@ -15,6 +15,6 @@ To install the required packages you can simply run:
 ```bash
 python -m pip install -r requirements.txt
 ```
-*The [requirements.txt](../blob/master/requirements.txt) file has all the required dependencies predefined*
+*The [requirements.txt](../master/requirements.txt) file has all the required dependencies predefined*
 
 [Konachan]: https://konachan.net/
