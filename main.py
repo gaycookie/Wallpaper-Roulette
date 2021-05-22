@@ -18,10 +18,10 @@ def getWorkingDir():
     os.mkdir(os.path.join(pathlib.Path.home(), "Wallpaper Roulette"))
   return os.path.join(pathlib.Path.home(), "Wallpaper Roulette")
 
-def getDownloadDir(folder = "Downloads"):
-  if not os.path.exists(os.path.join(workingDir, folder)):
-    os.mkdir(os.path.join(workingDir, folder))
-  return os.path.join(workingDir, folder)
+def getDownloadDir():
+  if not os.path.exists(os.path.join(workingDir, "Downloads")):
+    os.mkdir(os.path.join(workingDir, "Downloads"))
+  return os.path.join(workingDir, "Downloads")
 
 workingDir = getWorkingDir()
 config = Config(workingDir)

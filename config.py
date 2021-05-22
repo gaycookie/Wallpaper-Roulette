@@ -7,7 +7,6 @@ class Config:
         self.width = "1920"
         self.height = "1080"
         self.rating = "safe"
-        self.downloadFolder = "downloads"
         self.removeOld = True
 
         if os.path.exists(os.path.join(working_dir, "config.json")):
@@ -40,9 +39,6 @@ class Config:
 
     def getRating(self):
         return self.rating
-
-    def getDownloadFolder(self):
-        return self.downloadFolder
 
     def getRemoveOld(self):
         return self.removeOld
