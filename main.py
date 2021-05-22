@@ -25,7 +25,7 @@ def getDownloadDir():
 
 workingDir = getWorkingDir()
 config = Config(workingDir)
-downloadDir = getDownloadDir(config.getDownloadFolder())
+downloadDir = getDownloadDir()
 url = f"https://konachan.com/post.json?limit=1&tags={random.choice(config.getSearchTags())}+order:random+width:{config.getDimension('width')}+height:{config.getDimension('height')}+rating:{config.getRating()}"
 
 def oldFileHandler():
