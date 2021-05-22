@@ -17,6 +17,12 @@ python -m pip install -r requirements.txt
 ```
 *The [requirements.txt](../master/requirements.txt) file has all the required dependencies predefined*
 
+## Location
+The download folder and the config file are stored in a folder inside your user directory.
+
+**Windows**: `%USERPROFILE%/Wallpaper Roulette`  
+**Ubuntu**: `~/Wallpaper Roulette`
+
 ## Configuration
 This script automatically creates a `config.json` file with configurations that can be changed.
 
