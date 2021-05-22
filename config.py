@@ -3,7 +3,7 @@ import json
 
 class Config:
     def __init__(self, working_dir):
-        self.searchTags = ["panties"]
+        self.searchTags = ["animal_ears"]
         self.width = "1920"
         self.height = "1080"
         self.rating = "safe"
