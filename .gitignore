@@ -1,5 +1,8 @@
 __pycache__
 /icons
+/dist
+/build
 
 config.json
+WallpaperRolette.spec
 WallpaperRoulette.desktop
