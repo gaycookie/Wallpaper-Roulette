@@ -70,3 +70,8 @@ so it doesn't have to download the same one twice.
 [Konachan]: https://konachan.net/
 [tags]: https://konachan.net/tag?name=&type=&order=count
 [ratings]: https://konachan.net/help/ratings
+
+## Planned features
+- **Offline mode**  
+  When no connection can be detected or the API is offline.  
+  It will use previous downloaded wallpapers.
