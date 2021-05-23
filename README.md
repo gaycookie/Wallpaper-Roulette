@@ -64,6 +64,9 @@ As of this moment the ratings are as follows:
 By default this script removes all the downloaded wallpapers when a new one is set.  
 If you would like this script to preserve the downloads, set this to `false`.
 
+This feature can save up bandwidth if the wallpaper was used before,  
+so it doesn't have to download the same one twice.
+
 [Konachan]: https://konachan.net/
 [tags]: https://konachan.net/tag?name=&type=&order=count
 [ratings]: https://konachan.net/help/ratings

@@ -43,16 +43,19 @@ def downloadImage(url, id):
   ext = re.search("\.[0-9a-z]+$", url)
   fileName = "{0}{1}".format(id, ext[0]) #url.split("/")[-1]
 
-  req = requests.get(url, stream = True)
-  if req.status_code == 200:
-    req.raw.decode_content = True
-
-    with open(os.path.join(downloadDir, fileName), 'wb') as file:
-      shutil.copyfileobj(req.raw, file)
-
-    setWallpaper(fileName)
+  if os.path.exists(os.path.join(downloadDir, fileName)):
+    setWallpaper(os.path.join(downloadDir, fileName))
   else:
-    return False
+    req = requests.get(url, stream = True)
+    if req.status_code == 200:
+      req.raw.decode_content = True
+
+      with open(os.path.join(downloadDir, fileName), 'wb') as file:
+        shutil.copyfileobj(req.raw, file)
+
+      setWallpaper(fileName)
+    else:
+      return False
 
 def setWallpaper(filename):
   file = os.path.join(downloadDir, filename)
