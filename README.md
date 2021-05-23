@@ -7,7 +7,7 @@ So this might not run on your OS or OS version.
 
 ## Requirements
 - Python 3.5 or higher ([download](https://www.python.org/downloads/))
-- Python packages: [Requests](https://pypi.org/project/requests/)
+- Python packages: [Requests]
 - Active internet connection
 
 ## Installation
@@ -16,6 +16,13 @@ To install the required packages you can simply run:
 python -m pip install -r requirements.txt
 ```
 *The [requirements.txt](../master/requirements.txt) file has all the required dependencies predefined*
+
+## Build locally
+To build this into a single executable I use [PyInstaller].  
+And execute the following command:
+```bash
+pyinstaller main.pyw --name "WallpaperRoulette" --icon "./icons/icon.ico"  --onefile
+```
 
 ## Location
 The download folder and the config file are stored in a folder inside your user directory.
@@ -67,11 +74,13 @@ If you would like this script to preserve the downloads, set this to `false`.
 This feature can save up bandwidth if the wallpaper was used before,  
 so it doesn't have to download the same one twice.
 
-[Konachan]: https://konachan.net/
-[tags]: https://konachan.net/tag?name=&type=&order=count
-[ratings]: https://konachan.net/help/ratings
-
 ## Planned features
 - **Offline mode**  
   When no connection can be detected or the API is offline.  
   It will use previous downloaded wallpapers.
+
+[Konachan]: https://konachan.net/
+[Requests]: https://pypi.org/project/requests/
+[PyInstaller]: https://pypi.org/project/pyinstaller/
+[tags]: https://konachan.net/tag?name=&type=&order=count
+[ratings]: https://konachan.net/help/ratings
