@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 from config import Config
+from api import API
+
 import pathlib
-import random
 import requests
 import shutil
 import os
@@ -26,7 +27,7 @@ def getDownloadDir():
 workingDir = getWorkingDir()
 config = Config(workingDir)
 downloadDir = getDownloadDir()
-url = f"https://konachan.com/post.json?limit=1&tags={random.choice(config.getSearchTags())}+order:random+width:{config.getDimension('width')}+height:{config.getDimension('height')}+rating:{config.getRating()}"
+url = API(config).getURL()
 
 def oldFileHandler():
   if config.getRemoveOld() is True: 
